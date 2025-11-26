@@ -16,7 +16,6 @@ echo "==============================="
 echo "👤 User: $USER"             # $USER is your current username
 echo "🖥️ Hostname: $(hostname)"   # $(hostname) runs hostname command to get computer name
 echo "📅 Date: $(date)"           # $(date) runs date command to get current date/time
-echo "⏳ Uptime: $(uptime -p)"    # $(uptime -p) shows how long system has been running
 
 # Print a separator
 echo ""
@@ -24,13 +23,6 @@ echo "-------------------------------"
 echo "     DISK USAGE"
 echo "-------------------------------"
 df -h /   # Shows disk usage of main drive (human-readable)
-
-# Print memory usage
-echo ""
-echo "-------------------------------"
-echo "     MEMORY USAGE"
-echo "-------------------------------"
-free -h   # Shows RAM usage (human-readable)
 
 # Print a blank line and a done message
 echo ""
