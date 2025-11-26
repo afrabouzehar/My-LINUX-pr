@@ -1,30 +1,38 @@
-
 #!/bin/bash
+# This tells the system: "Use Bash to run this file"
 
-# ===========================================
-#     Simple System Information Tool
-# ===========================================
+# ============================
+#     Simple System Info Tool
+# ============================
+# Comments starting with # are ignored by the computer
+# They are for humans to understand the script
 
+# Print a nice title
 echo "==============================="
 echo "     SYSTEM INFORMATION"
 echo "==============================="
 
-echo "👤 User: $USER"
-echo "🖥️ Hostname: $(hostname)"
-echo "📅 Date: $(date)"
-echo "⏳ Uptime: $(uptime -p)"
-echo ""
+# Print basic user & system info
+echo "👤 User: $USER"             # $USER is your current username
+echo "🖥️ Hostname: $(hostname)"   # $(hostname) runs hostname command to get computer name
+echo "📅 Date: $(date)"           # $(date) runs date command to get current date/time
+echo "⏳ Uptime: $(uptime -p)"    # $(uptime -p) shows how long system has been running
 
+# Print a separator
+echo ""
 echo "-------------------------------"
 echo "     DISK USAGE"
 echo "-------------------------------"
-df -h /
-echo ""
+df -h /   # Shows disk usage of main drive (human-readable)
 
+# Print memory usage
+echo ""
 echo "-------------------------------"
 echo "     MEMORY USAGE"
 echo "-------------------------------"
-free -h
-echo ""
+free -h   # Shows RAM usage (human-readable)
 
+# Print a blank line and a done message
+echo ""
 echo "Done! 😊"
+
